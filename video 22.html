@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        nav {
+            display: flex;
+
+            background-color: yellow;
+            border: 2px solid blue;
+            justify-content: center;
+            align-items: flex-start;
+
+
+        }
+
+        ul li {
+            display: inline-flex;
+            height: 50px;
+            width: 60px;
+            background-color: rgb(252, 4, 4);
+            margin: 2px;
+            border: 2px solid rgb(227, 96, 15);
+            color: rgb(234, 9, 255);
+            font-size: 20px;
+
+        }
+        li:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        li:nth-child(odd){
+            background-color: pink;
+
+
+        }
+        .boxes{
+
+         display: inline-flex;
+         border: 2px solid beige;
+         margin: 50px;
+         width: 80%;
+         height: 400px;
+         
+                     
+        }
+        .box1{
+            border: 2px solid blue;
+            width: 50%;
+            height: 70%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .box2{
+            border: 2px solid blue;
+            width: 50%;
+            height: 70%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            background-color: green;
+            margin-right: 20px;
+
+            
+        }
+
+    </style>
+</head ><body>
+
+<nav>
+    <ul>
+        <li>home</li>
+        <li>About</li>
+        <li>House</li>
+        <li>why</li>
+        <li>how</li>
+        <li>Hello</li>
+    </ul>
+</nav>
+   <div class="boxes">Hello Guys
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    
+
+   </div>
+</body>
+
+</html>

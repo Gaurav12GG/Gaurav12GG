@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <!-- <style>
+     .container{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns:  [pehla] 100px [doosra] 120px [t];
+        grid-template-rows: 100px 100px 100px;
+     }
+     .item{
+        border: 2px solid blue;
+        height: 20px ;
+        width: 40px;
+     }
+     /* .item-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+     }
+     .item-4{
+        grid-row: 1/2;
+        grid-column: 1/2;
+     } */
+      /* this command will applly overlap of  two properties */
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html> -->
+
+
+    <style>
+     .container{
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas: "nav nav nav"  
+                    "side article article"
+                    "footer footer footer";
+     }
+     .item{
+        border: 2px solid blue;
+        height: 20px ;
+       
+     }
+     .item-1{
+        grid-area: nav;
+        background-color: yellow;
+
+     }
+     .item-2{
+          background-color: pink;
+        grid-area: side;
+     }
+     .item-3{
+    grid-area: article;
+        background-color: rgb(8, 161, 69);
+     }
+     .item-4{
+  grid-area: footer;
+        background-color: rgb(237, 131, 9);
+     }
+      /* this command will applly overlap of  two properties */
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+
+    </div>
+</body>
+</html>
+
+
+<!-- this are the two parts of grid one for grid templates and other is for direct easy method -->

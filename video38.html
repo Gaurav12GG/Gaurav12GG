@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: flex-start;
+            justify-content: flex-end; */
+            /* justify-items: baseline; */
+            /* flex-wrap: wrap; */
+            /* this property is udes to wrap the content if it is too much thne it will fit */
+            /* gap: 30px; */
+
+        }
+        .box{
+            height: 92px;
+            width: 92px;
+            background-color: yellow;
+            margin: 20px;
+            border: 2px solid rgb(112, 173, 21);
+            /* order property is used jitna jyada order utna end me aayega  */
+            /* flex-grow: 1; */
+            /* flex shrink is used */
+
+
+
+        }
+        .item1{
+            flex-grow: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box item1">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Variable</title>
+  
+    <style>
+        :root{
+            /* this are global variables which will be accaesd easily they can hold all values padding,opascity,numbers*/
+            --color:red;
+            --seccolor: orange;
+            --defpad: 23px;
+            --defop: 0.2;
+
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div:first-child {
+            background-color:var(--color);
+            /* this a variable for padding */
+            padding: var(--defpad);
+            /* this a  global varibale for  opacisty  */
+            opacity: var(--defop);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+            padding: var(--defpad);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style:decimal;
+         
+            padding: var(--defpad);
+        }
+        ul li:first-child{
+            /* this a local variable only work for this onre we can also change it same we can don for border tag also */
+              --color:rgb(255, 0, 200);
+              background-color: var(--color);
+              padding: var(--defpad);
+            
+        }
+
+        /* body{
+            background-color: grey;
+         } */
+    
+         /* the media querys  */
+         @media only screen and (max-width: 400px){
+         body{
+           background-color: blue;
+         }
+         .boxes{
+            flex-direction: column;
+         }
+         
+        }
+        /* @media  screen and (orientation: landscape) {
+            
+            
+        } */
+            
+         /* @media only screen and (min-width: 200px){
+         body {
+           background-color: blue;
+         }
+        } this is the media querry for min width  */
+         .boxes{
+            display: flex;
+
+         }
+        .box{
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+            margin: 3px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae in perspiciatis dolor nam velit est rem
+        tenetur corrupti, adipisci inventore assumenda enim similique.
+    </div>
+    <div class="boxes"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  
+    </div>
+</body>
+
+</html>
+<!--  -->
